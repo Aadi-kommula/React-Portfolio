@@ -41,7 +41,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <h3 className="font-semibold">Email</h3>
-                  <a href="mailto:your.email@example.com" className="text-muted-foreground hover:text-primary transition-colors">
+                  <a href="mailto:Aadikommula@gmail.com" className="text-muted-foreground hover:text-primary transition-colors">
                     Aadikommula@gmail.com
                   </a>
                 </div>
@@ -55,8 +55,8 @@ export default function Contact() {
                 </div>
                 <div>
                   <h3 className="font-semibold">Phone</h3>
-                  <a href="tel:+1234567890" className="text-muted-foreground hover:text-primary transition-colors">
-                    +91 8978500126
+                  <a href="tel:+918978500126" className="text-muted-foreground hover:text-primary transition-colors">
+                    +918978500126
                   </a>
                 </div>
               </div>
@@ -78,7 +78,7 @@ export default function Contact() {
           </div>
 
           {/* Contact Form */}
-          <Card className="p-6 animate-fade-left">
+          <Card className="p-6 hover:shadow-lg transition-shadow animate-fade-left">
             <form onSubmit={handleSubmit} className="space-y-6">
               <div className="space-y-2">
                 <Input 
@@ -107,10 +107,10 @@ export default function Contact() {
                 className="w-full group" 
                 disabled={isSubmitting}
               >
-                <span className="group-hover:translate-x-1 transition-transform">
+                <span className="group-hover:translate-x-3 transition-transform">
                   Send Message
                 </span>
-                <Send className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
+                <Send className="ml-2 h-4 w-4 group-hover:translate-x-3 transition-transform" />
               </Button>
             </form>
           </Card>

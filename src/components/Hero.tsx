@@ -16,8 +16,8 @@ export default function Hero() {
           className="group animate-fade-up" 
           style={{ animationDelay: "400ms" }}
         >
-          <span className="group-hover:translate-x-1 transition-transform"><a href="#projects">View My Work</a></span>
-          <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
+          <span className="group-hover:translate-x-3 transition-transform"><a href="#projects">View My Work</a></span>
+          <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-3 transition-transform" />
         </Button>
         <a href="#contact">
         <Button 

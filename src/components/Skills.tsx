@@ -1,5 +1,5 @@
 import { Card } from "@/components/ui/card";
-import { Code, Palette, Layout, Database, FileCode, Laptop } from "lucide-react";
+import { Code, Palette, Layout, Database, FileCode, Laptop ,Rocket } from "lucide-react";
 
 const skills = [
   { name: "HTML & CSS", level: "Advanced", icon: Layout },
@@ -7,7 +7,7 @@ const skills = [
   { name: "React", level: "Intermediate", icon: Code },
   { name: "SQL", level: "Intermediate", icon: Database },
   { name: "Java", level: "Intermediate", icon: Laptop },
-  { name: "Git", level: "Advanced", icon: FileCode },
+  { name: "Git", level: "Advanced", icon: Rocket },
 ];
 
 export default function Skills() {
