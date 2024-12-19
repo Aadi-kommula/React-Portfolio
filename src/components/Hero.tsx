@@ -1,5 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
+import { Code, Palette, Layout, Database, FileCode, Laptop ,Rocket } from "lucide-react";
+import resume from '../components/resume.pdf'
 
 export default function Hero() {
   return (
@@ -19,14 +21,14 @@ export default function Hero() {
           <span className="group-hover:translate-x-3 transition-transform"><a href="#projects">View My Work</a></span>
           <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-3 transition-transform" />
         </Button>
-        <a href="#contact">
+        <a href={resume}>
         <Button 
           size="lg" 
           variant="outline" 
-          className="group animate-fade-up hover:bg-primary/10" 
+          className="group text-primary animate-fade-up hover:bg-primary/80 hover:text-white" 
           style={{ animationDelay: "600ms" }}
         >
-          Contact Me
+          Resume<FileCode className="ml-2 h-4 w-4" />
         </Button>
         </a>
       </div>
