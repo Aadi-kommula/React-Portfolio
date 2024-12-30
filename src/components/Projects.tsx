@@ -4,6 +4,8 @@ import { Rocket, Code, Paintbrush } from "lucide-react";
 import hsp from './hospital.webp'
 import wapp from './weather.png'
 import live from './online.png'
+import tic from './tic-tac.png'
+import quiz from './quiz.png'
 
 const projects = [
   {
@@ -20,11 +22,26 @@ const projects = [
     link: "https://aadi-weatherapp.vercel.app/",
     icon: Rocket
   },
+  
+  {
+    title: "Tic Tac Toe",
+    description: "A Simple react based Tic Tac Toe Game",
+    image: tic,
+    link: "https://aadi-tic-tac-toe.vercel.app/",
+    icon: Paintbrush
+  },
   {
     title: "Online Live Code Editor",
     description: "Simple But Highly Functional HTML CSS Compiler Webapp",
     image: live,
-    link: "https://aadi-kommula.github.io/Online_Live_Code_Editor/",
+    link: "https://aadi-olce.vercel.app/",
+    icon: Rocket
+  },
+  {
+    title: "Simple Quizapp Prototype",
+    description: "A Simple react based Quizapp prototype",
+    image: quiz,
+    link: "https://aadi-quizapp.vercel.app/",
     icon: Paintbrush
   },
 ];
