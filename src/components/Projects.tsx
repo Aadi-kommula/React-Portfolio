@@ -1,11 +1,12 @@
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Rocket, Code, Paintbrush } from "lucide-react";
-import hsp from './hospital.webp'
-import wapp from './weather.png'
-import live from './online.png'
-import tic from './tic-tac.png'
-import quiz from './quiz.png'
+import hsp from '../images/hospital.webp'
+import wapp from '../images/weather.png'
+import live from '../images/online.png'
+import tic from '../images/tic-tac.png'
+import quiz from '../images/quiz.png'
+import edutech from '../images/edutech.png'
 
 const projects = [
   {
@@ -13,6 +14,13 @@ const projects = [
     description: "A modern web application built with Java and Spring Boot",
     image: hsp,
     link: "#projects",
+    icon: Code
+  },
+  {
+    title: "Edutech",
+    description: "Users of the E-Learning Platform have the ability to enroll in courses and participate in quizzes.",
+    image: edutech,
+    link: "https://aadi-edutech.vercel.app/",
     icon: Code
   },
   {
