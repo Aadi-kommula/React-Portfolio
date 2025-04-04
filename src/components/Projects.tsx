@@ -133,7 +133,7 @@ export default function Projects() {
                   <p className="text-muted-foreground mb-4">{project.description}</p>
                   <div className="flex justify-between">
                     {/* button for view project */}
-                    <Button asChild className="group-hover:bg-white/90 group-hover:text-cyan-600">
+                    <Button asChild className="bg-cyan-500 group-hover:bg-white/90 group-hover:text-cyan-600">
                       <a href={project.link} target="_blank" className="inline-flex bg-cyan-500 text-white   items-center gap-2">
                         View Project
                         <Icon className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
