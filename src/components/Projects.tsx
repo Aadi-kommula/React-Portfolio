@@ -8,6 +8,7 @@ import chatbot from '../images/chatbot.webp'; import todoapp from '../images/Tod
 import cc from '../images/cc.png';
 import flipbasket from '../images/flipbasket.png';
 import befit from '../images/befit.png';
+import '../App.css'
 
 const projects = [
   {
@@ -104,14 +105,14 @@ export default function Projects() {
   return (
     <section className="py-20" id="projects">
       <div className="container">
-        <h2 className="section-title">My Projects</h2>
+        <h2 className="section-title  text-cyan-500 hover:text-cyan-600">My Projects</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => {
             const Icon = project.icon;
             return (
               <Card
                 key={project.title}
-                className="overflow-hidden hover:shadow-lg transition-all duration-300 transform hover:-translate-y-2 group"
+                className="card-hover-projects overflow-hidden hover:shadow-lg transition-all duration-300 transform hover:-translate-y-2 group"
                 style={{ animationDelay: `${index * 100}ms` }}
               >
                 <div className="relative">
@@ -120,9 +121,9 @@ export default function Projects() {
                     alt={project.title}
                     className="w-full h-48 object-cover"
                   />
-                  <div className="absolute top-4 right-4 p-2 rounded-full bg-white/90 group-hover:bg-primary/90 transition-colors">
+                  <div className="absolute top-4 right-4 p-2 rounded-full bg-white/90 group-hover:bg-cyan-500 transition-colors">
                     <Icon
-                      className="w-6 h-6 text-primary group-hover:text-white group-hover:rotate-12 transition-all"
+                      className=" w-6 h-6 text-cyan-500 group-hover:text-white group-hover:rotate-12 transition-all"
                       strokeWidth={1.5}
                     />
                   </div>
@@ -132,15 +133,15 @@ export default function Projects() {
                   <p className="text-muted-foreground mb-4">{project.description}</p>
                   <div className="flex justify-between">
                     {/* button for view project */}
-                    <Button asChild>
-                      <a href={project.link} target="_blank" className="inline-flex items-center gap-2">
+                    <Button asChild className="group-hover:bg-white/90 group-hover:text-cyan-600">
+                      <a href={project.link} target="_blank" className="inline-flex bg-cyan-500 text-white   items-center gap-2">
                         View Project
                         <Icon className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                       </a>
                     </Button>
 
                     {/* button for github */}
-                    <Button asChild className="bg-gray-800 hover:bg-gray-600 text-white">
+                    <Button asChild className="bg-green-600 group-hover:bg-green-600 text-white">
                       <a href={project.code} target="_blank" className="inline-flex items-center gap-2">
                         Github Repo
                       </a>

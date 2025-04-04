@@ -27,17 +27,17 @@ export default function Contact() {
   };
 
   return (
-    <section className="py-20 bg-secondary/30" id="contact">
+    <section className=" py-20 bg-secondary/30" id="contact">
       <div className="container max-w-6xl">
-        <h2 className="section-title animate-fade-down">Get In Touch</h2>
+        <h2 className="section-title animate-fade-down  text-cyan-500 hover:text-cyan-600">Get In Touch</h2>
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* Contact Info */}
           <div className="space-y-6 animate-fade-right">
-            <Card className="p-6 hover:shadow-lg transition-shadow">
+            <Card className="card-hover p-6 hover:shadow-lg transition-shadow">
               <div className="flex items-center gap-4 group">
-                <div className="p-3 rounded-full bg-primary/10 group-hover:bg-primary/20 transition-colors">
-                  <Mail className="w-6 h-6 text-primary" />
+                <div className="p-3 rounded-full bg-primary/10 group-hover:bg-white/80 transition-colors">
+                  <Mail className="w-6 h-6 text-cyan-600 group-hover:text-black" />
                 </div>
                 <div>
                   <h3 className="font-semibold">Email</h3>
@@ -48,10 +48,10 @@ export default function Contact() {
               </div>
             </Card>
             
-            <Card className="p-6 hover:shadow-lg transition-shadow">
+            <Card className="card-hover p-6 hover:shadow-lg transition-shadow">
               <div className="flex items-center gap-4 group">
-                <div className="p-3 rounded-full bg-primary/10 group-hover:bg-primary/20 transition-colors">
-                  <Phone className="w-6 h-6 text-primary" />
+                <div className="p-3 rounded-full bg-primary/10 group-hover:bg-white/80 transition-colors">
+                  <Phone className="w-6 h-6 group-hover:text-black" />
                 </div>
                 <div>
                   <h3 className="font-semibold">Phone</h3>
@@ -62,10 +62,10 @@ export default function Contact() {
               </div>
             </Card>
             
-            <Card className="p-6 hover:shadow-lg transition-shadow">
+            <Card className="card-hover p-6 hover:shadow-lg transition-shadow">
               <div className="flex items-center gap-4 group">
-                <div className="p-3 rounded-full bg-primary/10 group-hover:bg-primary/20 transition-colors">
-                  <MapPin className="w-6 h-6 text-primary" />
+                <div className="p-3 rounded-full bg-primary/10 group-hover:bg-white/80 transition-colors">
+                  <MapPin className="w-6 h-6 group-hover:text-black" />
                 </div>
                 <div>
                   <h3 className="font-semibold">Location</h3>
@@ -78,7 +78,7 @@ export default function Contact() {
           </div>
 
           {/* Contact Form */}
-          <Card className="p-6 hover:shadow-lg transition-shadow animate-fade-left">
+          <Card className="card-hover p-6 hover:shadow-lg transition-shadow animate-fade-left">
             <form onSubmit={handleSubmit} className="space-y-6">
               <div className="space-y-2">
                 <Input 
@@ -104,7 +104,7 @@ export default function Contact() {
               </div>
               <Button 
                 type="submit" 
-                className="w-full group" 
+                className="w-full group bg-cyan-500 hover:bg-cyan-600" 
                 disabled={isSubmitting}
               >
                 <span className="group-hover:translate-x-3 transition-transform">

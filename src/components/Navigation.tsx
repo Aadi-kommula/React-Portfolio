@@ -32,7 +32,7 @@ export default function Navigation() {
           {/* Logo */}
           <a
             href="#home"
-            className="text-2xl font-bold text-primary hover:text-primary/80 transition-colors"
+            className="text-2xl font-bold  text-cyan-600 hover:text-cyan-500 transition-colors"
             onClick={(e) => {
               e.preventDefault();
               handleClick("#home");
@@ -43,7 +43,7 @@ export default function Navigation() {
 
           {/* Hamburger Menu Button */}
           <button
-            className="block md:hidden text-primary focus:outline-none"
+            className="block md:hidden text-cyan-500 focus:outline-none"
             onClick={() => setMenuOpen(!menuOpen)}
           >
             {menuOpen ? (
@@ -86,12 +86,12 @@ export default function Navigation() {
                 variant="ghost"
                 className={cn(
                   "relative group",
-                  activeItem === item.href && "text-primary"
+                  activeItem === item.href && "text-cyan-600"
                 )}
                 onClick={() => handleClick(item.href)}
               >
                 {item.label}
-                <span className="absolute left-0 right-0 bottom-0 h-0.5 bg-primary scale-x-0 group-hover:scale-x-100 transition-transform origin-left" />
+                <span className="absolute left-0 right-0 bottom-0 h-0.5 bg-cyan-500 scale-x-0 group-hover:scale-x-100 transition-transform origin-left" />
               </Button>
             ))}
           </div>
@@ -111,7 +111,7 @@ export default function Navigation() {
                 variant="ghost"
                 className={cn(
                   "block w-full",
-                  activeItem === item.href && "text-primary"
+                  activeItem === item.href && "text-cyan-500"
                 )}
                 onClick={() => handleClick(item.href)}
               >

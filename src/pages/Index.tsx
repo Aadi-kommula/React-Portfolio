@@ -4,10 +4,12 @@ import Skills from "@/components/Skills";
 import Projects from "@/components/Projects";
 import Contact from "@/components/Contact";
 import Navigation from "@/components/Navigation";
+import FollowCursor from "@/components/FollowCursor"; 
 
 export default function Index() {
   return (
     <>
+      <FollowCursor />
       <Navigation />
       <main className="min-h-screen pt-16">
         <section id="home">
