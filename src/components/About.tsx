@@ -1,5 +1,5 @@
 import { Card } from "@/components/ui/card";
-import pic from '../images/Profile-pic.jpg'
+import pic from '../images/Profile-pic.webp'
 import './About.css'
 import '../App.css'
 export default function About() {

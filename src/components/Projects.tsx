@@ -8,6 +8,7 @@ import chatbot from '../images/chatbot.webp'; import todoapp from '../images/Tod
 import cc from '../images/cc.png';
 import flipbasket from '../images/flipbasket.png';
 import befit from '../images/befit.png';
+import ibomma from '../images/ibomma.png';
 import '../App.css'
 
 const projects = [
@@ -74,6 +75,14 @@ const projects = [
     link: "https://aadi-weatherapp.vercel.app/",
     icon: Rocket,
     code: "https://github.com/Aadi-kommula/Weather-app-react"
+  },
+  {
+    title: "ibomma Clone",
+    description: "A simple and clean replication of ibomma movies website.",
+    image: ibomma,
+    link: "https://aadi-ibomma.vercel.app/",
+    icon: Rocket,
+    code: "https://github.com/Aadi-kommula/ibomma_clone"
   },
   {
     title: "Tic Tac Toe",
