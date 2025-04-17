@@ -1,14 +1,14 @@
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Rocket, Code, Paintbrush } from "lucide-react";
-import hsp from '../images/hospital.webp'; import wapp from '../images/weather.png'
-import live from '../images/online.png'; import tic from '../images/tic-tac.png'
-import quiz from '../images/quiz.png'; import edutech from '../images/edutech.png'
-import chatbot from '../images/chatbot.webp'; import todoapp from '../images/Todo App.png'
-import cc from '../images/cc.png';
-import flipbasket from '../images/flipbasket.png';
-import befit from '../images/befit.png';
-import ibomma from '../images/ibomma.png';
+import hsp from '../images/hospital.webp'; import wapp from '../images/weather.webp'
+import live from '../images/online.webp'; import tic from '../images/tic-tac.webp'
+import quiz from '../images/quiz.webp'; import edutech from '../images/edutech.webp'
+import chatbot from '../images/chatbot.webp'; import todoapp from '../images/Todo App.webp'
+import cc from '../images/cc.webp';
+import flipbasket from '../images/flipbasket.webp';
+import befit from '../images/befit.webp';
+import ibomma from '../images/ibomma.webp';
 import '../App.css'
 
 const projects = [

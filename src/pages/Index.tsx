@@ -5,6 +5,8 @@ import Projects from "@/components/Projects";
 import Contact from "@/components/Contact";
 import Navigation from "@/components/Navigation";
 import FollowCursor from "@/components/FollowCursor"; 
+import  Linkedin  from "@/components/Linkedin";
+
 
 export default function Index() {
   return (
@@ -21,6 +23,13 @@ export default function Index() {
         <section id="skills">
           <Skills />
         </section>
+       
+        <section id="linkedin">
+          <Linkedin />
+        </section>
+       
+          
+        
         <section id="projects">
           <Projects />
         </section>
